@@ -13,14 +13,13 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="HOME"
+            android:text="Món ăn"
             android:textAlignment="center"
             android:textSize="25dp"/>
     </LinearLayout>
     <GridView
-        android:layout_marginTop="20dp"
-        android:numColumns="2"
-        android:id="@+id/mainGV"
+        android:layout_marginTop="10dp"
+        android:id="@+id/foodGV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></GridView>
 </LinearLayout>

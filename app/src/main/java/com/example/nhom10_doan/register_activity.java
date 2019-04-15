@@ -1,9 +1,9 @@
 package com.example.nhom10_doan;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class register_activity extends AppCompatActivity {
+public class register_activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
