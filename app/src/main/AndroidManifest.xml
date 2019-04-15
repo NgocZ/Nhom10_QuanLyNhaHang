@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".booking_activity"></activity>
+        <activity android:name=".order_activity"></activity>
+        <activity android:name=".booking_activity" />
         <activity android:name=".food_activity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".register_activity" />

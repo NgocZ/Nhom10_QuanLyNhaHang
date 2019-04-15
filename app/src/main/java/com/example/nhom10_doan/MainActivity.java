@@ -33,10 +33,20 @@ public class MainActivity extends Activity {
                         Intent intent = new Intent(MainActivity.this, food_activity.class);
                         startActivity(intent);
                         break;
+                    case 2:
+
+                        Intent intent2 = new Intent(MainActivity.this, order_activity.class);
+                        startActivity(intent2);
+                        break;
                     case 3:
 
                         Intent intent3 = new Intent(MainActivity.this, booking_activity.class);
                         startActivity(intent3);
+                        break;
+                    case 5:
+
+                        Intent intent5 = new Intent(MainActivity.this, order_activity.class);
+                        startActivity(intent5);
                         break;
                 }
             }
