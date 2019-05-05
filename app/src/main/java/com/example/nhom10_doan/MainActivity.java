@@ -48,6 +48,12 @@ public class MainActivity extends Activity {
                         Intent intent5 = new Intent(MainActivity.this, order_activity.class);
                         startActivity(intent5);
                         break;
+                    case 6:
+
+                        Intent intent6 = new Intent(MainActivity.this, bill_main_activity.class);
+                        startActivity(intent6);
+                        break;
+
                 }
             }
         });

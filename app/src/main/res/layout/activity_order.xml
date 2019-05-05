@@ -40,6 +40,7 @@
             android:layout_height="match_parent">
         </GridView>
         <Button
+            android:id="@+id/datmonbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Hoàn thành"/>
