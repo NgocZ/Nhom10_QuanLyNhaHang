@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:focusableInTouchMode="true"
         android:layout_width="match_parent"
-        android:layout_height="457dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bgcard"
         android:orientation="vertical"
+        android:focusableInTouchMode="true"
         android:padding="40dp">
 
         <TextView
@@ -24,43 +24,58 @@
             android:text="Quản lý quán ăn"
             android:textColor="#0F0F0F"
             android:textSize="34dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Tạo tài khoản mới"
+            android:textColor="#FF9A3E"
+            android:textStyle="bold"
+            android:textSize="22dp" />
 
 
         <EditText
-            android:id="@+id/txtTaiKhoan"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="22dp"
             android:background="@drawable/bg_editext"
             android:hint="Tên đăng nhập"
             android:singleLine="true"
             android:paddingLeft="18dp" />
 
         <EditText
-            android:id="@+id/txtMatKhau"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="14dp"
             android:background="@drawable/bg_editext"
             android:hint="Mật khẩu"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_editext"
+            android:hint="Nhập lại mật khẩu"
             android:inputType="textPassword"
             android:singleLine="true"
             android:paddingLeft="18dp" />
 
         <Button
-            android:id="@+id/buttonDangNhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:background="@drawable/bg_btn"
-            android:text="Đăng nhập"
+            android:text="Đăng ký"
             android:textColor="#FFFFFF"
             android:textSize="16dp" />
 
         <LinearLayout
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="28dp"
             android:orientation="horizontal">
@@ -68,17 +83,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bạn chưa có tài khoản?"
+                android:text="Bạn đã có tài khoản!"
                 android:textColor="#363636"
                 android:textSize="16dp" />
 
             <TextView
-                android:id="@+id/txtDangKy"
+                android:id="@+id/txtDangNhap"
+                android:clickable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:clickable="true"
-                android:text="Đăng ký ngay"
+                android:text="Đăng nhập"
                 android:textColor="#FF9A3E"
                 android:textSize="16dp" />
 
