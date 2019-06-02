@@ -34,15 +34,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
         <GridView
+            android:padding="5dp"
+            android:verticalSpacing="5dp"
             android:id="@+id/orderGV"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </GridView>
         <Button
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="5dp"
             android:id="@+id/datmonbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/bg_btn"
+            android:textColor="@color/colorWhite"
             android:text="Hoàn thành"/>
         </LinearLayout>
     </LinearLayout>
