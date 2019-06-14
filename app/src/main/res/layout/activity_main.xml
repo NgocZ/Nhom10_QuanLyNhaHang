@@ -18,9 +18,14 @@
             android:textSize="25dp"/>
     </LinearLayout>
     <GridView
+        android:padding="20dp"
         android:layout_marginTop="20dp"
         android:numColumns="2"
         android:id="@+id/mainGV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></GridView>
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        ></GridView>
 </LinearLayout>
