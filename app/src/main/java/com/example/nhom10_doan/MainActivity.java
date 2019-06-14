@@ -28,20 +28,29 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+                    case 0:
+                        Intent intent0 = new Intent(MainActivity.this, danhmuc.class);
+                        startActivity(intent0);
+                        break;
                     case 1:
 
-                        Intent intent = new Intent(MainActivity.this, food_activity.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(MainActivity.this, food_activity.class);
+                        startActivity(intent1);
                         break;
                     case 2:
 
-                        Intent intent2 = new Intent(MainActivity.this, order_activity.class);
+                        Intent intent2 = new Intent(MainActivity.this, menu.class);
                         startActivity(intent2);
                         break;
                     case 3:
 
                         Intent intent3 = new Intent(MainActivity.this, booking_activity.class);
                         startActivity(intent3);
+                        break;
+                    case 4:
+
+                        Intent intent4 = new Intent(MainActivity.this, doanhthu.class);
+                        startActivity(intent4);
                         break;
                     case 5:
 
