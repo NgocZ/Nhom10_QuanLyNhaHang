@@ -1,19 +1,19 @@
 package com.example.nhom10_doan;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class order_main extends AppCompatActivity {
+public class order_main extends Activity {
     ArrayList<String> name = new ArrayList();
     ArrayList<Integer> solg = new ArrayList();
     ArrayList<Integer> tien = new ArrayList();
@@ -44,9 +44,16 @@ public class order_main extends AppCompatActivity {
         ht.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(order_main.this, MainActivity.class);
+                Intent intent1 = new Intent(order_main.this, order_activity.class);
                 startActivity(intent1);
 
+            }
+        });
+        ImageView img = (ImageView) findViewById(R.id.back);
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(order_main.this, order_activity.class);
+                startActivity(intent);
             }
         });
     }

@@ -19,7 +19,7 @@
         <activity android:name=".order_main" />
         <activity android:name=".order_activity" />
         <activity android:name=".booking_activity" />
-        <activity android:name=".food_activity" />
+        <activity android:name=".food_activity"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".register_activity" />
         <activity android:name=".login_activity">

@@ -1,15 +1,16 @@
 package com.example.nhom10_doan;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-public class bill_main_activity extends AppCompatActivity {
+public class bill_main_activity extends Activity {
     ArrayList<String> name = new ArrayList();
     ArrayList<Integer> tien = new ArrayList();
     @Override
@@ -35,5 +36,12 @@ public class bill_main_activity extends AppCompatActivity {
             startActivity(intent);
         }
     });
+        ImageView img = (ImageView) findViewById(R.id.back);
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(bill_main_activity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

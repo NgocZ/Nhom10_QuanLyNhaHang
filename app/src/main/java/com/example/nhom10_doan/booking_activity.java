@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class booking_activity extends Activity {
@@ -51,6 +53,13 @@ public class booking_activity extends Activity {
                     Intent intent = new Intent(booking_activity.this, Checkin.class);
                     startActivity(intent);
                 }
+            }
+        });
+        ImageView img = (ImageView) findViewById(R.id.back);
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(booking_activity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
